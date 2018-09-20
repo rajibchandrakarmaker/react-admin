@@ -70,7 +70,7 @@ a {
       margin-right: 10px;
     }
     .brand-name {
-      color: #ea4c89;
+      color: #1e2a38;
       font-family: 'Roboto', sans-serif;
       font-size: 21px;
       font-weight: 700;
@@ -79,9 +79,10 @@ a {
       letter-spacing: -0.5px;
       text-transform: uppercase;
       span {
-        font-weight: 300;
+        font-weight: 700;
         display: inline-block;
         transition: all 0.2s ease-in-out;
+        color: #68ad96;
       }
       span:first-child {
         padding-right: 2px;
@@ -111,7 +112,6 @@ a {
         width: 61px;
         height: 61px;
         border-radius: 50%;
-        border: 1px solid #ffffff;
         margin-right: 10px;
       }
       .userinfo {
@@ -123,7 +123,7 @@ a {
         }
         .title {
           font-size: 12px;
-          font-weight: 300;
+          font-weight: 400;
           line-height: 17px;
         }
       }
@@ -230,7 +230,7 @@ a {
   width: calc(100% - 280px);
   min-height: 100%;
   overflow: auto;
-  background-color: #fafcfe;
+  background-color: #e9ecef;
   box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1);
 }
 

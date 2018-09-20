@@ -20,10 +20,10 @@
     h5,
     h6 {
       margin: 15px 0;
-      color: darken($primary-color, 10);
+      color: #68ad96;
       letter-spacing: 1px;
       line-height: 17px;
-      font-weight: 300;
+      font-weight: 400;
     }
     p {
       color: $black-color;
@@ -62,12 +62,12 @@
     line-height: 18px;
     font-weight: 300;
     &.control-label {
-      color: #25265F;
+      color: #25265f;
       text-transform: uppercase;
     }
     &.error {
       text-transform: none;
-      color: #FB404B;
+      color: #fb404b;
       margin-top: 5px;
     }
   }
