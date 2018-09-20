@@ -26,10 +26,9 @@ renderApp(Main);
 
 if (module.hot) {
   module.hot.accept('./pages/Main', () => {
-    const NextApp = require('./pages/Main').default
+    const NextApp = require('./pages/Main').default;
     renderApp(NextApp);
   });
 }
 
 registerServiceWorker();
-
