@@ -18,6 +18,7 @@ import Forms from '../Forms';
 import Charts from '../Charts';
 import Calendar from '../Calendar';
 import Tables from '../Tables';
+import Auth from '../Auth';
 
 const Main = ({ mobileNavVisibility, hideMobileMenu, history }) => {
   history.listen(() => {
@@ -44,6 +45,7 @@ const Main = ({ mobileNavVisibility, hideMobileMenu, history }) => {
           <Route path="/tables" component={Tables} />
           <Route path="/charts" component={Charts} />
           <Route path="/calendar" component={Calendar} />
+          <Route path="/auth" component={Auth} />
           <Footer />
         </div>
       </div>

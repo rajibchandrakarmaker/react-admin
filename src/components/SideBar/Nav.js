@@ -146,6 +146,53 @@ class Nav extends Component {
             </div>
           </Collapse>
         </li>
+        {/* Auth  */}
+        <li
+          className={
+            this.isPathActive('/auth') || this.state.pagesMenuOpen
+              ? 'active'
+              : null
+          }
+        >
+          <a
+            onClick={() =>
+              this.setState({ pagesMenuOpen: !this.state.pagesMenuOpen })
+            }
+            data-toggle="collapse"
+          >
+            <i className="pe-7s-note2" />
+            <p>
+              Pages <b className="caret" />
+            </p>
+          </a>
+          <Collapse in={this.state.pagesMenuOpen}>
+            <div>
+              <ul className="nav">
+                <li
+                  className={this.isPathActive('/auth/login') ? 'active' : null}
+                >
+                  <Link to="/auth/login">Login</Link>
+                </li>
+                <li
+                  className={
+                    this.isPathActive('/forms/extended-forms') ? 'active' : null
+                  }
+                >
+                  <Link to="/forms/extended-forms">Extended Forms</Link>
+                </li>
+                <li
+                  className={
+                    this.isPathActive('/forms/validation-forms')
+                      ? 'active'
+                      : null
+                  }
+                >
+                  <Link to="/forms/validation-forms">Validation Forms</Link>
+                </li>
+              </ul>
+            </div>
+          </Collapse>
+        </li>
         <li
           className={
             this.isPathActive('/tables') || this.state.tableMenuOpen
