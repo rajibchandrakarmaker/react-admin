@@ -1,12 +1,12 @@
 import React from 'react';
-import LoginForm from './Login';
+import StackedForm from './Login';
 
 const Auth = () => (
   <div className="content">
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-8">
-          <LoginForm />
+          <StackedForm />
         </div>
       </div>
     </div>

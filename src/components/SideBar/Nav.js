@@ -32,7 +32,7 @@ class Nav extends Component {
           >
             <i className="pe-7s-plugin" />
             <p>
-              Components
+              UI Elements
               <b className="caret" />
             </p>
           </a>
@@ -172,22 +172,6 @@ class Nav extends Component {
                   className={this.isPathActive('/auth/login') ? 'active' : null}
                 >
                   <Link to="/auth/login">Login</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/forms/extended-forms') ? 'active' : null
-                  }
-                >
-                  <Link to="/forms/extended-forms">Extended Forms</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/forms/validation-forms')
-                      ? 'active'
-                      : null
-                  }
-                >
-                  <Link to="/forms/validation-forms">Validation Forms</Link>
                 </li>
               </ul>
             </div>
