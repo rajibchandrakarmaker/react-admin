@@ -71,4 +71,17 @@
       margin-top: 5px;
     }
   }
+  .footer {
+    .item {
+      .text-info {
+        color: #68ad96 !important;
+      }
+      .text-danger {
+        color: #5e7a6e !important;
+      }
+      .text-warning {
+        color: #afd436 !important;
+      }
+    }
+  }
 }

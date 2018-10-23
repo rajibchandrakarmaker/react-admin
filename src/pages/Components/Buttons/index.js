@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Colors from './Colors';
-import ButtonStyles from './ButtonStyles';
-import ButtonsWithLabel from './ButtonsWithLabel';
 import ButtonSizes from './ButtonSizes';
-import ButtonGroups from './ButtonGroups';
-import Pagination from './Pagination';
 const ButtonsPage = () => (
   <div className="container-fluid">
     <div className="row">
@@ -15,23 +11,7 @@ const ButtonsPage = () => (
               <Colors />
             </div>
             <div className="col-md-6">
-              <ButtonStyles />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
-              <ButtonsWithLabel />
-            </div>
-            <div className="col-md-6">
               <ButtonSizes />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
-              <ButtonGroups />
-            </div>
-            <div className="col-md-6">
-              <Pagination />
             </div>
           </div>
         </div>

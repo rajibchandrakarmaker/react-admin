@@ -7,7 +7,6 @@ const Colors = () => (
     </div>
     <div className="content buttons-with-margin">
       <button className="btn btn-default btn-fill btn-wd">Default</button>
-      <button className="btn btn-primary btn-fill btn-wd">Primary</button>
       <button className="btn btn-info btn-fill btn-wd">Info</button>
       <button className="btn btn-success btn-fill btn-wd">Success</button>
       <button className="btn btn-warning btn-fill btn-wd">Warning</button>

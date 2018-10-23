@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import backgroundImage from '../assets/images/sidebar-5.jpg';
 
 const MobileMenu = ({ location, backgroundColor, backgroundImage }) => (
   <div>
