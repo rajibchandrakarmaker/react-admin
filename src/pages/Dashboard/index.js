@@ -1,29 +1,24 @@
 import React from 'react';
-import EmailChart from './EmailChart';
-import SalesChart from './SalesChart';
-import UserBehaviorChart from './UserBehaviorChart';
-import Tasks from './Tasks';
+import UserStatistic from './UserStatistic';
+import ServerStatus from './ServerStatus';
+import SalesStatistics from './SalesStatistics';
 
 const Dashboard = () => (
   <div className="content">
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-4">
-          <EmailChart />
-        </div>
-        <div className="col-md-8">
-          <SalesChart />
+        <div className="col-md-12">
+          <ServerStatus />
         </div>
       </div>
       <div className="row">
         <div className="col-md-6">
-          <UserBehaviorChart />
+          <SalesStatistics />
         </div>
         <div className="col-md-6">
-          <Tasks />
+          <UserStatistic />
         </div>
       </div>
-
     </div>
   </div>
 );

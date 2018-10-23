@@ -1,15 +1,7 @@
 import React from 'react';
 import ChartistGraph from 'react-chartist';
 
-
-// Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
-
-// Chartist.Pie('#chartPreferences', {
-// labels: ['62%','32%','6%'],
-// series: [62, 32, 6]
-// });
-const EmailStatistic = () => {
-
+const UserStatistic = () => {
   let dataPreferences = {
     labels: ['62%', '32%', '6%'],
     series: [62, 32, 6]
@@ -33,38 +25,38 @@ const EmailStatistic = () => {
   let chartType = 'Pie';
 
   return (
-
     <div className="card">
       <div className="header">
-        <h4 className="title">Email Statistics</h4>
-        <p className="category">Last Campaign Performance</p>
+        <h4 className="title">User Statistics</h4>
+        <p className="category">User Daily Report</p>
       </div>
       <div className="content">
-
-        <ChartistGraph data={dataPreferences} options={optionsPreferences} type={chartType} className={'ct-chart ct-perfect-fourth'} />
-
-
+        <ChartistGraph
+          data={dataPreferences}
+          options={optionsPreferences}
+          type={chartType}
+          className={'ct-chart ct-perfect-fourth'}
+        />
       </div>
       <div className="footer">
         <div className="legend">
           <div className="item">
-            <i className="fa fa-circle text-info"></i> Open
+            <i className="fa fa-circle text-info" /> Current User
           </div>
           <div className="item">
-            <i className="fa fa-circle text-danger"></i> Bounce
+            <i className="fa fa-circle text-danger" /> New User
           </div>
           <div className="item">
-            <i className="fa fa-circle text-warning"></i> Unsubscribe
+            <i className="fa fa-circle text-warning" /> Old User
           </div>
         </div>
         <hr />
         <div className="stats">
-          <i className="fa fa-clock-o"></i> Campaign sent 2 days ago
-          </div>
+          <i className="fa fa-clock-o" /> Upadted 10 minutes ago
+        </div>
       </div>
     </div>
-
   );
 };
 
-export default EmailStatistic;
+export default UserStatistic;

@@ -1,11 +1,9 @@
 import React from 'react';
-import AccordionGroup from './AccordionGroup';
-import TabGroup from './TabGroup';
+import PanelGroup from './PanelGroup';
 const Panels = () => (
   <div className="content">
     <div className="container-fluid">
-      <AccordionGroup />
-      <TabGroup />
+      <PanelGroup />
     </div>
   </div>
 );

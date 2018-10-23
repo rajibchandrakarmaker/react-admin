@@ -48,20 +48,6 @@ class Nav extends Component {
                 </li>
                 <li
                   className={
-                    this.isPathActive('/components/grid') ? 'active' : null
-                  }
-                >
-                  <Link to="/components/grid">Grid System</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/components/icons') ? 'active' : null
-                  }
-                >
-                  <Link to="/components/icons">Icons</Link>
-                </li>
-                <li
-                  className={
                     this.isPathActive('/components/notifications')
                       ? 'active'
                       : null
@@ -74,109 +60,13 @@ class Nav extends Component {
                     this.isPathActive('/components/panels') ? 'active' : null
                   }
                 >
-                  <Link to="/components/panels">Panels</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/components/sweetalert')
-                      ? 'active'
-                      : null
-                  }
-                >
-                  <Link to="/components/sweetalert">Sweet Alert</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/components/typography')
-                      ? 'active'
-                      : null
-                  }
-                >
-                  <Link to="/components/typography">Typography</Link>
+                  <Link to="/components/panels">Tabs & Accordion</Link>
                 </li>
               </ul>
             </div>
           </Collapse>
         </li>
-        <li
-          className={
-            this.isPathActive('/forms') || this.state.formMenuOpen
-              ? 'active'
-              : null
-          }
-        >
-          <a
-            onClick={() =>
-              this.setState({ formMenuOpen: !this.state.formMenuOpen })
-            }
-            data-toggle="collapse"
-          >
-            <i className="pe-7s-note2" />
-            <p>
-              Forms <b className="caret" />
-            </p>
-          </a>
-          <Collapse in={this.state.formMenuOpen}>
-            <div>
-              <ul className="nav">
-                <li
-                  className={
-                    this.isPathActive('/forms/regular-forms') ? 'active' : null
-                  }
-                >
-                  <Link to="/forms/regular-forms">Regular Forms</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/forms/extended-forms') ? 'active' : null
-                  }
-                >
-                  <Link to="/forms/extended-forms">Extended Forms</Link>
-                </li>
-                <li
-                  className={
-                    this.isPathActive('/forms/validation-forms')
-                      ? 'active'
-                      : null
-                  }
-                >
-                  <Link to="/forms/validation-forms">Validation Forms</Link>
-                </li>
-              </ul>
-            </div>
-          </Collapse>
-        </li>
-        {/* Auth  */}
-        <li
-          className={
-            this.isPathActive('/auth') || this.state.pagesMenuOpen
-              ? 'active'
-              : null
-          }
-        >
-          <a
-            onClick={() =>
-              this.setState({ pagesMenuOpen: !this.state.pagesMenuOpen })
-            }
-            data-toggle="collapse"
-          >
-            <i className="pe-7s-note2" />
-            <p>
-              Pages <b className="caret" />
-            </p>
-          </a>
-          <Collapse in={this.state.pagesMenuOpen}>
-            <div>
-              <ul className="nav">
-                <li
-                  className={this.isPathActive('/auth/login') ? 'active' : null}
-                >
-                  <Link to="/auth/login">Login</Link>
-                </li>
-              </ul>
-            </div>
-          </Collapse>
-        </li>
+
         <li
           className={
             this.isPathActive('/tables') || this.state.tableMenuOpen
@@ -209,15 +99,6 @@ class Nav extends Component {
                 </li>
                 <li
                   className={
-                    this.isPathActive('/tables/extended-tables')
-                      ? 'active'
-                      : null
-                  }
-                >
-                  <Link to="/tables/extended-tables">Extended Tables</Link>
-                </li>
-                <li
-                  className={
                     this.isPathActive('/tables/fixed-data-table')
                       ? 'active'
                       : null
@@ -230,18 +111,6 @@ class Nav extends Component {
               </ul>
             </div>
           </Collapse>
-        </li>
-        <li className={this.isPathActive('/charts') ? 'active' : null}>
-          <Link to="/charts">
-            <i className="pe-7s-graph" />
-            <p>Charts</p>
-          </Link>
-        </li>
-        <li className={this.isPathActive('/calendar') ? 'active' : null}>
-          <Link to="/calendar">
-            <i className="pe-7s-date" />
-            <p>Calendar</p>
-          </Link>
         </li>
       </ul>
     );

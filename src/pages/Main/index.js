@@ -14,11 +14,7 @@ import SideBar from '../../components/SideBar';
 import Dashboard from '../Dashboard';
 import Components from '../Components';
 import UserProfile from '../UserProfile';
-import Forms from '../Forms';
-import Charts from '../Charts';
-import Calendar from '../Calendar';
 import Tables from '../Tables';
-import Auth from '../Auth';
 
 const Main = ({ mobileNavVisibility, hideMobileMenu, history }) => {
   history.listen(() => {
@@ -41,11 +37,7 @@ const Main = ({ mobileNavVisibility, hideMobileMenu, history }) => {
           <Route exact path="/" component={Dashboard} />
           <Route path="/components" component={Components} />
           <Route path="/profile" component={UserProfile} />
-          <Route path="/forms" component={Forms} />
           <Route path="/tables" component={Tables} />
-          <Route path="/charts" component={Charts} />
-          <Route path="/calendar" component={Calendar} />
-          <Route path="/auth" component={Auth} />
           <Footer />
         </div>
       </div>
