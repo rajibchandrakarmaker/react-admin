@@ -7,13 +7,8 @@ This package includes:
 - Charts
 - Buttons
 - Notifications
-- Sweet Alert
 - Redux Form
-- AirBnB React Dates
-- Google Map
-- Uber Vector Map
 - React Bootstrap Table
-- React Big Calendar
 
 ## Get started
 
