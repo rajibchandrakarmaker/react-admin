@@ -47,7 +47,7 @@
     "react-bootstrap-table": "^4.1.0",
     "react-chartist": "^0.13.0",
     "react-dates": "^12.6.0",
-    "react-dev-utils": "^4.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^15.6.1",
     "react-google-maps": "^7.3.0",
     "react-map-gl": "^3.0.4",
